@@ -1,0 +1,26 @@
+.nav{
+    width:24%;
+    border: 2px solid white;
+}
+
+.nav .nav-li .itens {
+    list-style: none;
+}
+.nav .nav-li .itens a{
+    margin-left: 5px;
+    text-decoration:none;
+    font-size: 0.9em;
+    color:rgba(255, 255, 255, 0.753);
+}
+.nav .nav-li .itens .nav-icon{
+    font-size: 1.2em;
+    color:rgba(255, 255, 255);
+}
+
+.nav .nav-li .itens .nav-icon .code{
+    background-color:aqua;
+}
+
+.nav .nav-li .itens .nav-icon .group{
+
+}
