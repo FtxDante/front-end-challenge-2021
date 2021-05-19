@@ -1,0 +1,43 @@
+.body{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    background-color:  #051D3B;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    /*border: 2px solid white;*/
+}
+.logo-alura-dev{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+.logo-alura-dev .span-dev{
+    background-color: white;
+    vertical-align: top;
+    color: black;
+    margin-left: 5px;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.perfil-preview {
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center;
+}
+.perfil-img{
+    width: 25%;
+    margin-right: 5px;
+}
+.input-look{
+    background-color:rgba(255, 255, 255, 0.16);;
+    width: 50%;
+    height: 56px;
+    border: none;
+    border-radius: 8px;
+    padding: 0 10px 0 10px;
+}
