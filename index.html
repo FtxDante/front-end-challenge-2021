@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraDev</title>
-    <link rgba(255, 255, 255, 0.842)/reset.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.css">
     <link rel="stylesheet" href="css/menu-nav.css">
+    <link rel="stylesheet" href="css/padrao.css">
+    <link rel="stylesheet" href="css/flex-container.css">
+    <link rel="stylesheet" href="css/input-editor.css">
+    <link rel="stylesheet" href="css/campo-projeto.css">
 </head>
 
 <body class="body">
@@ -17,7 +21,7 @@
 
         <h1 class="logo-alura-dev">Alura<span class="span-dev">Dev</span></h1>
 
-        <input type="text" placeholder="Busque por algo" class="input-look ">
+        <input type="text" placeholder="Busque por algo" class="input-look buscador-header">
 
         <div class="perfil-preview">
             <img src="img/Header/perfil-harry.png" alt="Sua Imagem de Perfil" class="perfil-img">
@@ -28,18 +32,38 @@
 
     <div class="flex-container">
 
-        <nav class="nav">
-             <h2 class="font-padrao">Menu</h2>
-
+        <nav class="nav mesma-largura">
              <ul class="nav-li">
+                <h2 class="font-padrao-titulos">Menu</h2>
                  <li class="itens">
-                     <i class="fas fa-code nav-icon code"></i><a href="#">Editor de código</a>
+                     <i class="fas fa-code nav-icon code align-center"></i>
+                     <a href="#">Editor de código</a>
                 </li>
                 <li class="itens">
-                    <i class="fas fa-users nav-icon group"></i><a href="#">Comunidade</a>
+                    <i class="fas fa-users nav-icon group align-center"></i>
+                    <a href="#">Comunidade</a>
                 </li>
              </ul>
         </nav>
+
+        <div class="input-editor">
+            <div class="div-black">
+                <header class="estetica">
+                    <span class="bolinha-vermelha span"></span>
+                    <span class="bolinha-amarela span"></span>
+                    <span class="bolinha-verde span"></span>
+                </header>
+                <textarea name="editor-code" id="editor-code" cols="30" rows="10" class="editor-textarea"></textarea>
+            </div>
+        </div>
+
+        <div class="campo-projeto mesma-largura">
+            <div class="seu-projeto">
+                <h2 class="font-padrao-titulos">Seu projeto</h2>
+                <input type="text" class="input-nome-projeto input-look" placeholder="Nome do seu projeto">
+                <input name="" id="" cols="30" rows="10" class="input-descricao-projeto input-look" placeholder="Descrição do seu projeto">
+            </div>
+        </div>
 
     </div>
 </body>

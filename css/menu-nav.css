@@ -1,26 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 .nav{
-    width:24%;
-    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
 }
 
-.nav .nav-li .itens {
+.nav .itens {
+    display: flex;
+    align-items: center;
     list-style: none;
+    margin-bottom: 15px;
 }
-.nav .nav-li .itens a{
+.nav .itens a{
     margin-left: 5px;
     text-decoration:none;
     font-size: 0.9em;
     color:rgba(255, 255, 255, 0.753);
 }
-.nav .nav-li .itens .nav-icon{
-    font-size: 1.2em;
+.nav .itens .nav-icon{
+    font-size: 1em;
     color:rgba(255, 255, 255);
 }
 
-.nav .nav-li .itens .nav-icon .code{
-    background-color:aqua;
+.nav .code{
+    flex-wrap: nowrap;
+    width:48px;
+    height: 48px;
+    background-color:#5081FB;
+    border-radius: 18px;
+    margin-right: 15px;
 }
 
-.nav .nav-li .itens .nav-icon .group{
-
+.nav .group{
+    flex-wrap: nowrap;
+    width:48px;
+    height: 48px;
+    background-color:#5080fb5d;
+    border-radius: 18px;
+    margin-right: 15px;
 }
