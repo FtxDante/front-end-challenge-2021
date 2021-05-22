@@ -2,6 +2,7 @@
 .nav{
     display: flex;
     flex-direction: column;
+    align-self: flex-start;
 }
 
 .nav .itens {
@@ -37,4 +38,9 @@
     background-color:#5080fb5d;
     border-radius: 18px;
     margin-right: 15px;
+}
+@media screen and (max-width:960px){
+    .nav{
+        display: none;
+    }
 }

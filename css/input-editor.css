@@ -1,4 +1,4 @@
-.input-editor{
+.campo-editor{
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -6,16 +6,24 @@
     width: 60%;
     max-width: 945px;
     height: 402px;
-    background-color: #6BD1FF;
     border-radius: 8px;
     padding: 25px;
+}
+.campo-editor .cor-selecionada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6BD1FF;
+    border-radius: 8px;
+    width: 100%;
+    height: 442px;
 }
 .div-black{
     display: flex;
     flex-direction: column;
     background-color: black;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     border-radius: 8px;
 }
 .div-black .estetica{
@@ -40,9 +48,15 @@
 .bolinha-verde{
     background-color: #27C93F;
 }
-.editor-textarea{
-    color: white;
+.campo-editor .editor-textarea{
+   color: white;
     border: none;
     background-color: rgba(0, 0, 0, 0);
     height: 90%;
+}
+@media screen and (max-width:960px) {
+    .campo-editor{
+        width: 100%;
+        margin-bottom: 50px;
+    }
 }

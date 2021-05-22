@@ -1,18 +1,45 @@
 .campo-projeto{
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
+    align-self: flex-start;
+}
+.div-projeto{
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 .campo-projeto .seu-projeto{
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
 }
-.input-nome-projeto{
-    margin-bottom: 10px;
-    max-width: 275px;
+.cor-de-fundo{
+    background-color: rgba(0, 255, 255, 0);
+    height: 50px;
+    border-radius: 8px;
 }
-.input-descricao-projeto{
-    margin-bottom: 10px;
-    max-width: 275px;
+.button-submit{
+    background-color: #5081FB;
+}
+@media screen and (max-width:960px) {
+    .flex-container{
+        flex-direction: column;
+    }
+    .campo-projeto{
+        flex-direction: row;
+        width: 100%;
+    }
+    .campo-projeto .form-projeto{
+        width: 100%;
+    }
+    .div-projeto{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .input-descricao-projeto{
+        margin-left: 10px;
+    }
+    .button-submit{
+        min-width: 100%;
+    }
 }

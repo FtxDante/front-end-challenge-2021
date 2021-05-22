@@ -32,6 +32,7 @@
 
     <div class="flex-container">
 
+        <!--NAVEGAÇÃO-->
         <nav class="nav mesma-largura">
              <ul class="nav-li">
                 <h2 class="font-padrao-titulos">Menu</h2>
@@ -45,24 +46,51 @@
                 </li>
              </ul>
         </nav>
-
-        <div class="input-editor">
-            <div class="div-black">
-                <header class="estetica">
-                    <span class="bolinha-vermelha span"></span>
-                    <span class="bolinha-amarela span"></span>
-                    <span class="bolinha-verde span"></span>
-                </header>
-                <textarea name="editor-code" id="editor-code" cols="30" rows="10" class="editor-textarea"></textarea>
+         <!--EDITOR DE TEXT-->
+        <div class="campo-editor">
+            <div class="cor-selecionada">
+                <div class="div-black">
+                    <header class="estetica">
+                        <span class="bolinha-vermelha span"></span>
+                        <span class="bolinha-amarela span"></span>
+                        <span class="bolinha-verde span"></span>
+                    </header>
+                    <textarea name="editor-code" id="editor-code" cols="30" rows="10" class="editor-textarea"></textarea>
+    
+                </div>
             </div>
+            
         </div>
 
+        <!--CAMPO DE CONFIGURAÇÃO DO PROJETO-->
         <div class="campo-projeto mesma-largura">
-            <div class="seu-projeto">
-                <h2 class="font-padrao-titulos">Seu projeto</h2>
-                <input type="text" class="input-nome-projeto input-look" placeholder="Nome do seu projeto">
-                <input name="" id="" cols="30" rows="10" class="input-descricao-projeto input-look" placeholder="Descrição do seu projeto">
-            </div>
+
+                <form action="" class="form-projeto">
+                    <label for="seu-projeto" class="font-padrao-titulos">Seu projeto</label>
+                    <div class="div-projeto" id="seu-projeto">
+
+                        <input type="text" class="input-desktop input-look" placeholder="Nome do seu projeto">
+                        <input type="text" class="input-descricao-projeto input-look input-desktop" placeholder="Descrição do seu projeto">
+
+                    </div>
+
+                    <label for="personalizacao" class="font-padrao-titulos">Personalização</label>
+                    <div class="div-projeto" id="personalizacao">
+            
+                        <select name="opções de selecao" id="campo-selecao" class="input-look input-desktop">
+                            <option value="javascript" >JavaScript</option>
+                            <option value="Jquery">Jquery</option>
+                            <option value="Java">Java</option>
+                        </select>
+                        
+                        <input type="color" value="#6BD1FF" class="cor-de-fundo   input-desktop">
+
+                    </div>
+                    
+                    <button type="submit" class="input-look input-desktop button-submit">Salvar Projeto</button>
+
+                </form>
+                
         </div>
 
     </div>

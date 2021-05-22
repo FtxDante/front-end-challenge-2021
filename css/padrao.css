@@ -26,3 +26,16 @@
     box-sizing: border-box;
     padding: 15px;
 }
+.input-desktop{
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 100%;
+    max-width: 292px;
+}
+
+@media screen and (max-width:960px){
+    .input-desktop{
+        max-width: none;
+    }
+}
