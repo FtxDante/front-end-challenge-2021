@@ -3,9 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 60%;
-    max-width: 945px;
-    height: 402px;
     border-radius: 8px;
     padding: 25px;
 }
@@ -54,9 +53,15 @@
     background-color: rgba(0, 0, 0, 0);
     height: 90%;
 }
-@media screen and (max-width:960px) {
+.highlight{
+    margin-top: 25px;
+    background-color: hsla(223, 96%, 65%, 0.082);
+    width: 100%;
+    height: 56px;
+    padding: 15px;
+}
+@media screen and (max-width:1366px) {
     .campo-editor{
         width: 100%;
-        margin-bottom: 50px;
     }
 }

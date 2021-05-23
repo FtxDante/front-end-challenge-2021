@@ -6,3 +6,8 @@
     padding: 0 35px;
     /*border: 2px solid white;*/
 }
+@media screen and (max-width:550px){
+    .flex-container{
+        padding: 10px;
+    }
+}

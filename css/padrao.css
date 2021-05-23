@@ -34,7 +34,7 @@
     max-width: 292px;
 }
 
-@media screen and (max-width:960px){
+@media screen and (max-width:1366px){
     .input-desktop{
         max-width: none;
     }

@@ -36,3 +36,25 @@
 .buscador-header{
     width: 50%;
 }
+.div-alternativos-itens{
+    display: none;
+}
+.fa-search{
+    font-size: 1.8em;
+}
+.fa-bars{
+    font-size: 2em;
+    margin-left: 25px;
+}
+@media screen and (max-width:1366px){
+    .div-alternativos-itens{
+        display: flex;
+        align-items: center;
+    }
+    .perfil-preview{
+        display: none;
+    }
+    .buscador-header{
+        display: none;
+    }
+}

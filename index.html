@@ -11,17 +11,23 @@
     <link rel="stylesheet" href="css/menu-nav.css">
     <link rel="stylesheet" href="css/padrao.css">
     <link rel="stylesheet" href="css/flex-container.css">
-    <link rel="stylesheet" href="css/input-editor.css">
+    <link rel="stylesheet" href="css/campo-editor.css">
     <link rel="stylesheet" href="css/campo-projeto.css">
 </head>
 
 <body class="body">
-    
+    <!--HEADER-->
     <header class="header">
 
         <h1 class="logo-alura-dev">Alura<span class="span-dev">Dev</span></h1>
 
         <input type="text" placeholder="Busque por algo" class="input-look buscador-header">
+
+        <div class="div-alternativos-itens">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-bars" id="barras-verticais"></i>
+        </div>
+        
 
         <div class="perfil-preview">
             <img src="img/Header/perfil-harry.png" alt="Sua Imagem de Perfil" class="perfil-img">
@@ -46,9 +52,11 @@
                 </li>
              </ul>
         </nav>
+
          <!--EDITOR DE TEXT-->
         <div class="campo-editor">
             <div class="cor-selecionada">
+
                 <div class="div-black">
                     <header class="estetica">
                         <span class="bolinha-vermelha span"></span>
@@ -58,8 +66,9 @@
                     <textarea name="editor-code" id="editor-code" cols="30" rows="10" class="editor-textarea"></textarea>
     
                 </div>
+
             </div>
-            
+            <input type="button" value="Visualizar com o highlight" class="input-look highlight">
         </div>
 
         <!--CAMPO DE CONFIGURAÇÃO DO PROJETO-->
@@ -69,8 +78,8 @@
                     <label for="seu-projeto" class="font-padrao-titulos">Seu projeto</label>
                     <div class="div-projeto" id="seu-projeto">
 
-                        <input type="text" class="input-desktop input-look" placeholder="Nome do seu projeto">
-                        <input type="text" class="input-descricao-projeto input-look input-desktop" placeholder="Descrição do seu projeto">
+                        <input type="text" class="input-desktop input-look" placeholder="Nome do seu projeto" required>
+                        <input type="text" class="input-descricao-projeto input-look input-desktop" placeholder="Descrição do seu projeto" required>
 
                     </div>
 
