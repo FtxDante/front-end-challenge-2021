@@ -7,6 +7,7 @@
     width: 60%;
     border-radius: 8px;
     padding: 25px;
+    max-width: 1185px;
 }
 .campo-editor .cor-selecionada{
     display: flex;
@@ -15,7 +16,7 @@
     background-color: #6BD1FF;
     border-radius: 8px;
     width: 100%;
-    height: 442px;
+    height: 560px;
 }
 .div-black{
     display: flex;
@@ -59,6 +60,10 @@
     width: 100%;
     height: 56px;
     padding: 15px;
+    
+}
+.highlight:hover{   
+    cursor: pointer;
 }
 @media screen and (max-width:1366px) {
     .campo-editor{

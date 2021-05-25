@@ -11,10 +11,17 @@
     display: flex;
     flex-direction: column;
 }
+.campo-projeto .campo-selecao{
+    color: black;
+}
 .cor-de-fundo{
     background-color: rgba(0, 255, 255, 0);
-    height: 50px;
+    height: 55px;
     border-radius: 8px;
+}
+.input-descricao-projeto{
+    padding-top: 20px;
+    min-height: 150px;
 }
 .button-submit{
     background-color: #5081FB;
@@ -38,8 +45,12 @@
     }
     .input-descricao-projeto{
         margin-left: 10px;
+        min-height: 55px;
     }
     .button-submit{
         min-width: 100%;
+    }
+    .button-submit:hover{
+        cursor: pointer;
     }
 }
