@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="css/flex-container.css">
     <link rel="stylesheet" href="css/campo-editor.css">
     <link rel="stylesheet" href="css/campo-projeto.css">
+    <link type="text/css" rel="stylesheet" href="css/SyntaxHighlighter.css"></link>
 </head>
 
 <body class="body">
-    <!--HEADER-->
     <header class="header">
 
         <h1 class="logo-alura-dev">Alura<span class="span-dev">Dev</span></h1>
@@ -24,8 +24,8 @@
         <input type="text" placeholder="Busque por algo" class="input-look buscador-header">
 
         <div class="div-alternativos-itens">
-            <i class="fas fa-search"></i>
-            <i class="fas fa-bars" id="botao-lista"></i>
+            <i class="fas fa-search pointer"></i>
+            <i class="fas fa-bars pointer" id="botao-lista"></i>
         </div>
         
 
@@ -37,7 +37,6 @@
     </header>
 
     <div class="flex-container">
-
         <!--NAVEGAÇÃO-->
         <nav class="nav mesma-largura">
              <ul class="nav-li">
@@ -63,12 +62,12 @@
                         <span class="bolinha-amarela span"></span>
                         <span class="bolinha-verde span"></span>
                     </header>
-                    <textarea name="editor-code" id="editor-code" cols="30" rows="10" class="editor-textarea"></textarea>
-    
+                    <!--TEXT-AREA-->
+                    <textarea name="code" id="#" cols="30" rows="10" class="editor-textarea html"><html></html></textarea>
                 </div>
 
             </div>
-            <button type="button" class="input-look highlight">Visualizar com o Highlight</button>
+            <button type="button" class="input-look highlight pointer">Visualizar com o Highlight</button>
         </div>
 
         <!--CAMPO DE CONFIGURAÇÃO DO PROJETO-->
@@ -101,12 +100,18 @@
                     <button type="submit" class="input-look input-desktop button-submit">Salvar Projeto</button>
 
                 </form>
-
-                <script src="/javascript/javaS.js"></script>
                 
         </div>
 
     </div>
+                <script src="/js/javaS.js"></script>
+                <script language="javascript" src="js/shCore.js"></script>
+                <script language="javascript" src="js/shBrushCSharp.js"></script>
+                <script language="javascript" src="js/shBrushXml.js"></script>
+                <script language="javascript">
+                dp.SyntaxHighlighter.ClipboardSwf = `/flash/clipboard.swf`;
+                dp.SyntaxHighlighter.HighlightAll(`code`);
+                </script>
 </body>
 
 </html>

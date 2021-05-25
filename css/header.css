@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 35px;
+    padding: 25px 35px;
     box-sizing: border-box;
     /*border: 2px solid white;*/
 }
@@ -41,18 +41,14 @@
     display: none;
 }
 .fa-search{
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
-.fa-search:hover{
-    cursor: pointer;
-}
+
 .fa-bars{
-    font-size: 2em;
+    font-size: 1.5em;
     margin-left: 25px;
 }
-.fa-bars:hover{
-    cursor: pointer;
-}
+
 .display-flex{
     display: flex;
 }

@@ -1,16 +1,15 @@
 var coresSeletor = document.querySelector("#cor-seletor");
 var coresBackground = document.querySelector(".cor-selecionada");
-
-coresSeletor.addEventListener("input", function(event){
-    coresBackground.style.backgroundColor = coresSeletor.value;
-    //console.log(cores.value);
-})
 var controle = 0;
 var botaoLista = document.querySelector("#botao-lista");
 var navegacao = document.querySelector(".nav");
+var body = document.querySelector("body");
+var corSeletorSalva;
 
 //Menu Mobile
-botaoLista.addEventListener("click", function(){
+botaoLista.addEventListener("click", navegacaoMenu);
+
+function navegacaoMenu(){
     if(controle == 0){
         navegacao.classList.add("nav-some");
         controle = 1;
@@ -18,8 +17,14 @@ botaoLista.addEventListener("click", function(){
         navegacao.classList.remove("nav-some");
         controle = 0;
     }
-    console.log(controle);
-    
-})
+}
+
+coresSeletor.addEventListener("input", corEditor);
+function corEditor(event){
+    coresBackground.style.backgroundColor = coresSeletor.value;
+    corSeletorSalva = coresSeletor.value;
+
+    //console.log(cores.value);
+}
 
 

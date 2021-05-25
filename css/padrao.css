@@ -1,5 +1,5 @@
 .font-padrao-titulos{
-    font-size: 0.8em;
+    font-size: 1em;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-family: 'Roboto', sans-serif;
@@ -32,6 +32,10 @@
     margin-left: 10px;
     width: 100%;
     max-width: 292px;
+}
+
+.pointer{
+    cursor: pointer;
 }
 
 @media screen and (max-width:1366px){
