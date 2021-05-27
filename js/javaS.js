@@ -11,10 +11,11 @@ botaoLista.addEventListener("click", navegacaoMenu);
 
 function navegacaoMenu(){
     if(controle == 0){
-        navegacao.classList.add("nav-some");
+
+        navegacao.classList.toggle("nav-some");
         controle = 1;
     }else{
-        navegacao.classList.remove("nav-some");
+        navegacao.classList.toggle("nav-some");
         controle = 0;
     }
 }
@@ -29,20 +30,14 @@ function corEditor(event){
 }
 
 //Aplicador de highlight
+linguagens = ["javascript","html","java","c#", "json","php"]
+document.addEventListener('DOMContentLoaded', aplicaHighlight);
 highlightButton.addEventListener('click', aplicaHighlight);
 
 function aplicaHighlight(){
+
     hljs.highlightAll();
     
 }
-//Personalizacao
-var inputSeletor = document.querySelector("#campo-selecao");
-inputSeletor.addEventListener("input", defineLinguagem);
-
-function defineLinguagem(){
-    inputSeletor.classList.remove("javascript");
-    inputSeletor.classList.add(inputSeletor.value)
-}
-
 
 

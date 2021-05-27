@@ -7,7 +7,7 @@
     <title>AluraDev</title>
     <link rel="stylesheet" href="css/reset.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css"> -->
-    <link rel="stylesheet" href="./highlightjs/dracula.css">
+    <link rel="stylesheet" href="highlightjs/dracula.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.css">
     <link rel="stylesheet" href="css/menu-nav.css">
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/flex-container.css">
     <link rel="stylesheet" href="css/campo-editor.css">
     <link rel="stylesheet" href="css/campo-projeto.css">
-    <link type="text/css" rel="stylesheet" href="css/SyntaxHighlighter.css"></link>
+    <link type="css/text" href="css/SyntaxHighlighter.css"></link>
 </head>
 
 <body class="body">
@@ -65,8 +65,9 @@
                         <span class="bolinha-verde span"></span>
                     </header>
                     
-                    <pre name="code" class="editor-textarea html" contenteditable="true">
-                        <code id="code" class="javascript">
+                    <pre name="code" class="editor-textarea" >
+                        <code id="code" class="javascript code-area" contenteditable="true">
+                            
                             function navegacaoMenu(){
                                 if(controle == 0){
                                     navegacao.classList.add("nav-some");
@@ -104,7 +105,7 @@
                     <div class="div-projeto" id="personalizacao">
             
                         <select name="opções de selecao" id="campo-selecao" class="input-look input-desktop">
-                            <option value="html">HTML</option>
+                            <option value="html">Html</option>
                             <option value="javascript" >JavaScript</option>
                             <option value="java">Java</option>
                             <option value="c#">C#</option>
@@ -118,7 +119,6 @@
                     </div>
                     
                     <button type="submit" class="input-look input-desktop button-submit">Salvar Projeto</button>
-
                 </form>
                 
         </div>

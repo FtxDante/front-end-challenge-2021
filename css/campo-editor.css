@@ -41,23 +41,23 @@
     border-radius: 15px;
 }
 
-.bolinha-vermelha{
-    background-color: #FF5F56;
-}
-.bolinha-amarela{
-    background-color: #FFBD2E;
-}
-.bolinha-verde{
-    background-color: #27C93F;
-}
+.bolinha-vermelha{background-color: #FF5F56;}
+.bolinha-amarela{background-color: #FFBD2E;}
+.bolinha-verde{background-color: #27C93F;}
+
 .campo-editor .editor-textarea{
-   color: white;
-    border: solid white ;
     background-color: rgba(0, 0, 0, 0);
     width: 98%;
     height: 90%;
-    resize: none;
+    
 }
+.campo-editor .code-area{
+     background-color: rgba(0, 0, 0, 0);
+     width: 98%;
+     height: 90%;
+     max-height: 90%;
+     
+ }
 .highlight{
     margin-top: 25px;
     background-color: hsla(223, 96%, 65%, 0.082);

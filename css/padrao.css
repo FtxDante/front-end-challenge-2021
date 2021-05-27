@@ -38,7 +38,12 @@
     cursor: pointer;
 }
 .hljs{
+    color: white;
     background-color: transparent;
+}
+
+option{
+    color: black;
 }
 
 @media screen and (max-width:1366px){

@@ -43,15 +43,17 @@
 }
 @media screen and (max-width:1366px){
     .nav{
+        display: none;
+        right: -90%;
+    }
+    .nav-some { 
+        display: initial;
         position: fixed;
         z-index: 1;
         right: 0;
         height: 50%;
         max-width: 195px !important;
-        transition: right 0.3s ease-out;
+        transition: right 0.5s ease-out;
         border-radius: 8px;
-    }
-    .nav-some { 
-        right: -90%;
     }
 }
