@@ -5,7 +5,7 @@ var botaoLista = document.querySelector("#botao-lista");
 var navegacao = document.querySelector(".nav");
 var body = document.querySelector("body");
 var corSeletorSalva;
-
+var highlightButton = document.querySelector("#highlight-button");
 //Menu Mobile
 botaoLista.addEventListener("click", navegacaoMenu);
 
@@ -19,6 +19,7 @@ function navegacaoMenu(){
     }
 }
 
+//Cor de fundo
 coresSeletor.addEventListener("input", corEditor);
 function corEditor(event){
     coresBackground.style.backgroundColor = coresSeletor.value;
@@ -26,5 +27,22 @@ function corEditor(event){
 
     //console.log(cores.value);
 }
+
+//Aplicador de highlight
+highlightButton.addEventListener('click', aplicaHighlight);
+
+function aplicaHighlight(){
+    hljs.highlightAll();
+    
+}
+//Personalizacao
+var inputSeletor = document.querySelector("#campo-selecao");
+inputSeletor.addEventListener("input", defineLinguagem);
+
+function defineLinguagem(){
+    inputSeletor.classList.remove("javascript");
+    inputSeletor.classList.add(inputSeletor.value)
+}
+
 
 

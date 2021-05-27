@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraDev</title>
     <link rel="stylesheet" href="css/reset.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css"> -->
+    <link rel="stylesheet" href="./highlightjs/dracula.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.css">
     <link rel="stylesheet" href="css/menu-nav.css">
@@ -62,12 +64,26 @@
                         <span class="bolinha-amarela span"></span>
                         <span class="bolinha-verde span"></span>
                     </header>
-                    <!--TEXT-AREA-->
-                    <textarea name="code" id="#" cols="30" rows="10" class="editor-textarea html"><html></html></textarea>
+                    
+                    <pre name="code" class="editor-textarea html" contenteditable="true">
+                        <code id="code" class="javascript">
+                            function navegacaoMenu(){
+                                if(controle == 0){
+                                    navegacao.classList.add("nav-some");
+                                    controle = 1;
+                                }else{
+                                    navegacao.classList.remove("nav-some");
+                                    controle = 0;
+                                }
+                            }
+                        </code>
+                            
+                            
+                    </pre>
                 </div>
 
             </div>
-            <button type="button" class="input-look highlight pointer">Visualizar com o Highlight</button>
+            <button type="button" class="input-look highlight pointer" id="highlight-button">Visualizar com o Highlight</button>
         </div>
 
         <!--CAMPO DE CONFIGURAÇÃO DO PROJETO-->
@@ -80,17 +96,21 @@
 
                         <input type="text" class="input-desktop input-look" placeholder="Nome do seu projeto" required>
         
-                        <textarea name="" id="" cols="30" rows="10"  class="input-descricao-projeto input-look input-desktop" placeholder="Descrição do seu projeto" required></textarea>
+                        <textarea name="" id="" cols="30" rows="10"  class="input-descricao-projeto input-look input-desktop" placeholder="Descrição do seu projeto" required ></textarea>
 
                     </div>
                     <!--PERSONALIZAÇÃO-->
                     <label for="personalizacao" class="font-padrao-titulos">Personalização</label>
                     <div class="div-projeto" id="personalizacao">
             
-                        <select name="opções de selecao" id="campo-selecao" class="input-look input-desktop campo-selecao">
+                        <select name="opções de selecao" id="campo-selecao" class="input-look input-desktop">
+                            <option value="html">HTML</option>
                             <option value="javascript" >JavaScript</option>
-                            <option value="Jquery">Jquery</option>
-                            <option value="Java">Java</option>
+                            <option value="java">Java</option>
+                            <option value="c#">C#</option>
+                            <option value="json">Json</option>
+                            <option value="php">PHP</option>
+                        
                         </select>
                         
                         <input type="color" value="#6BD1FF" class="cor-de-fundo  input-desktop" id="cor-seletor">
@@ -105,13 +125,7 @@
 
     </div>
                 <script src="/js/javaS.js"></script>
-                <script language="javascript" src="js/shCore.js"></script>
-                <script language="javascript" src="js/shBrushCSharp.js"></script>
-                <script language="javascript" src="js/shBrushXml.js"></script>
-                <script language="javascript">
-                dp.SyntaxHighlighter.ClipboardSwf = `/flash/clipboard.swf`;
-                dp.SyntaxHighlighter.HighlightAll(`code`);
-                </script>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
 </body>
 
 </html>

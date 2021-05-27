@@ -4,6 +4,7 @@
     flex-direction: column;
     align-self: flex-start;
     background-color: #051D3B;
+    min-width: 250px;
 }
 
 .nav .itens {

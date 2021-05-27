@@ -52,7 +52,7 @@
 }
 .campo-editor .editor-textarea{
    color: white;
-    border: none;
+    border: solid white ;
     background-color: rgba(0, 0, 0, 0);
     width: 98%;
     height: 90%;
