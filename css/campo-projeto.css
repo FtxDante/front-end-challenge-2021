@@ -50,4 +50,7 @@
     .button-submit{
         min-width: 100%;
     }
+    .button-submit:hover{
+        cursor: pointer;
+    }
 }

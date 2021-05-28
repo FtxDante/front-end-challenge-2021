@@ -21,7 +21,7 @@
 <body class="body">
     <header class="header">
 
-        <h1 class="logo-alura-dev">Alura<span class="span-dev">Dev</span></h1>
+        <h1 class="logo-alura-dev"><a href="index.html">Alura<span class="span-dev">Dev</span></a></h1>
 
         <input type="text" placeholder="Busque por algo" class="input-look buscador-header">
 
@@ -39,8 +39,11 @@
     </header>
 
     <div class="flex-container">
+
+
         <!--NAVEGAÇÃO-->
-        <nav class="nav mesma-largura">
+        <nav class="nav padrao-largura">
+
              <ul class="nav-li">
                 <h2 class="font-padrao-titulos">Menu</h2>
                  <li class="itens">
@@ -52,6 +55,7 @@
                     <a href="#">Comunidade</a>
                 </li>
              </ul>
+
         </nav>
 
          <!--EDITOR DE TEXT-->
@@ -59,28 +63,46 @@
             <div class="cor-selecionada">
 
                 <div class="div-black">
-                    <header class="estetica">
+                    <header class="header-div-black">
                         <span class="bolinha-vermelha span"></span>
                         <span class="bolinha-amarela span"></span>
                         <span class="bolinha-verde span"></span>
                     </header>
                     
-                    <pre name="code" class="editor-textarea" >
-                        <code id="code" class="javascript code-area" contenteditable="true">
+                    <pre class="editor-pre"><code id="code" class="javascript code-area" contenteditable="true">
+                        *JAVASCRIPT*
+                        var linguagens = ["javascript","html","java","c#", "json","php"]
+                        document.addEventListener('DOMContentLoaded', aplicaHighlight);
+                        highlightButton.addEventListener('click', aplicaHighlight);
+                        
+                        function aplicaHighlight(){
+                        
+                            hljs.highlightAll();
                             
-                            function navegacaoMenu(){
-                                if(controle == 0){
-                                    navegacao.classList.add("nav-some");
-                                    controle = 1;
-                                }else{
-                                    navegacao.classList.remove("nav-some");
-                                    controle = 0;
+                        }
+                        *C#*
+                        using System;
+                        using System.Collections.Generic;
+                        using System.Linq;
+                        using System.Text;
+                        using System.Threading.Tasks;
+
+                        namespace CSharpTutorials
+                        {
+                            class Program
+                            {
+                                static void Main(string[] args)
+                                {
+                                    string message = "Hello World!!";
+
+                                    Console.WriteLine(message);
                                 }
                             }
-                        </code>
-                            
-                            
-                    </pre>
+                        }
+                        *JAVA*
+                        import java.util.Scanner;
+
+                    </code></pre>
                 </div>
 
             </div>
@@ -88,7 +110,7 @@
         </div>
 
         <!--CAMPO DE CONFIGURAÇÃO DO PROJETO-->
-        <div class="campo-projeto mesma-largura">
+        <div class="campo-projeto padrao-largura">
 
                 <form action="" class="form-projeto">
                     <!--SEU PROJETO-->
@@ -105,8 +127,9 @@
                     <div class="div-projeto" id="personalizacao">
             
                         <select name="opções de selecao" id="campo-selecao" class="input-look input-desktop">
+                           
+                            <option value="javascript" >JavaScript</option> 
                             <option value="html">Html</option>
-                            <option value="javascript" >JavaScript</option>
                             <option value="java">Java</option>
                             <option value="c#">C#</option>
                             <option value="json">Json</option>

@@ -16,6 +16,13 @@
     font-size: 1.5em;
     text-transform: uppercase;
 }
+.logo-alura-dev a {
+    text-decoration: none;
+    color: white;
+}
+.logo-alura-dev:hover{
+    cursor: pointer;
+}
 .logo-alura-dev .span-dev{
     background-color: white;
     vertical-align: top;
@@ -24,7 +31,7 @@
     padding: 3px;
     border-radius: 5px;
 }
-
+/*PROBLEMA-  deveria funcionar assim: .header .perfil-preview{} */
 .perfil-preview {
     display: flex; 
     justify-content: flex-end;
@@ -35,7 +42,7 @@
     margin-right: 5px;
 }
 .buscador-header{
-    width: 50%;
+    width: 55%;
 }
 .div-alternativos-itens{
     display: none;
@@ -57,10 +64,18 @@
         display: flex;
         align-items: center;
     }
-    .perfil-preview{
+    .perfil-preview,.div-alternativos-itens .fa-search{
         display: none;
     }
-    .buscador-header{
+    
+}
+@media screen and (max-width:600px){
+    .div-alternativos-itens, .div-alternativos-itens .fa-search{
+        display: flex;
+        align-items: center;
+    }
+    .perfil-preview, .buscador-header{
         display: none;
     }
+    
 }

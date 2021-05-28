@@ -5,13 +5,16 @@
     align-self: flex-start;
     background-color: #051D3B;
     min-width: 250px;
+    transition: right 0.5s ease-out;
 }
 
 .nav .itens {
     display: flex;
     align-items: center;
+    opacity: 0.6;
     list-style: none;
     margin-bottom: 15px;
+    transition: 1s opacity;
 }
 .nav .itens a{
     margin-left: 5px;
@@ -22,6 +25,10 @@
 .nav .itens .nav-icon{
     font-size: 1em;
     color:rgba(255, 255, 255);
+}
+.nav .itens:hover{
+    opacity: 1;
+    cursor: pointer;
 }
 
 .nav .code{
@@ -41,6 +48,7 @@
     border-radius: 18px;
     margin-right: 15px;
 }
+/*PROBLEMA - TRANSIÇÃO NÃO FUNCIONA*/
 @media screen and (max-width:1366px){
     .nav{
         display: none;
@@ -53,7 +61,6 @@
         right: 0;
         height: 50%;
         max-width: 195px !important;
-        transition: right 0.5s ease-out;
         border-radius: 8px;
     }
 }
