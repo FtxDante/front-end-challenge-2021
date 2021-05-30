@@ -6,6 +6,7 @@
     background-color: #051D3B;
     min-width: 250px;
     transition: right 0.5s ease-out;
+    user-select: none;
 }
 
 .nav .itens {
@@ -51,6 +52,7 @@
 /*PROBLEMA - TRANSIÇÃO NÃO FUNCIONA*/
 @media screen and (max-width:1366px){
     .nav{
+        background-color: #2D415B;
         display: none;
         right: -90%;
     }

@@ -60,7 +60,8 @@
      width: 95%;
      height: 90%;
      outline: none;
-     overflow-y: scroll;
+     overflow: scroll;
+     
  }
 
 .highlight{

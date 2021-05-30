@@ -1,0 +1,55 @@
+.comunidade {
+    display: none;
+}
+.comunidade-aparece-desaparece{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+}
+.comunidade .campo-editor{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    border-radius: 8px;
+    padding: 25px;
+    max-width: 1185px;
+}
+
+.comunidade .informacoes-comunidade{
+    box-sizing: border-box;
+    background-color: #00000029;
+    ;
+    width: 100%;
+    /*border: 2px solid white;*/
+    border-radius: 8px;
+    padding: 20px;
+}
+.comunidade .campo-editor .titulo-projeto{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.comunidade .campo-editor .subtitulo-projeto{
+    margin-bottom: 15px;
+}
+.reacoes-e-comentarios{
+    display: flex;
+}
+.fa-heart{
+    margin-left: 10px;
+}
+
+@media screen and (max-width:1366px) {
+    .comunidade{
+        padding: 0px;
+    }
+    .comunidade .campo-editor{
+        width: 100%;
+    }
+}

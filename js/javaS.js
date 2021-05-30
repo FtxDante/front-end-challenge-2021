@@ -56,29 +56,31 @@ function removeClassHighlightAnterior(){
 }
 
 //COMUNIDADE
-//CODIGO PARA PEGAR CONTEUDO DO EDITOR E COPIAR:
-var conteudoEditor = editorCode;
-var editorLink = document.querySelector("#editor-link");
-var comunidadeLink = document.querySelector("#comunidade-link");
-var flexContainer = document.querySelector(".container-spa")
-
-comunidadeLink.addEventListener("click", comunidadeSPA);
-var controle = 0;
-function comunidadeSPA(){
-    
-    if(controle == 0){
-
-        flexContainer.classList.add("display-none");
-        controle = 1;
-    }else{
-        flexContainer.classList.remove("display-none");
-        controle = 0;
-    }
-}
-
 //Prevenção do valor padrão da tecla TAB
 document.querySelector('#code').addEventListener('keydown', function(e) {
     if(e.keyCode === 9) {
         e.preventDefault();
     }    
 });
+
+//CODIGO PARA PEGAR CONTEUDO DO EDITOR E COPIAR:
+var conteudoEditor = editorCode;
+var editorLink = document.querySelector("#editor-link");
+var comunidadeLink = document.querySelector("#comunidade-link");
+var flexContainer = document.querySelector(".container-spa");
+var controle = 0;
+var comunidadeDiv = document.querySelector(".comunidade");
+comunidadeLink.addEventListener("click", irParaComunidade);
+editorLink.addEventListener("click", irParaEditor);
+
+function irParaComunidade(){
+        flexContainer.classList.add("display-none");
+        comunidadeDiv.classList.add("comunidade-aparece-desaparece");
+        controle = 1;   
+}
+
+function irParaEditor(){
+    flexContainer.classList.remove("display-none");
+    comunidadeDiv.classList.remove("comunidade-aparece-desaparece");
+}
+

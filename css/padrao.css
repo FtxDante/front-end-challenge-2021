@@ -1,3 +1,24 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000000a4;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+     background: #f1f1f13f;
+     border-radius: 8px;
+  ;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 .font-padrao-titulos{
     font-size: 0.85em;
     text-transform: uppercase;
@@ -45,6 +66,7 @@
 option{
     color: black;
 }
+
 
 @media screen and (max-width:1366px){
     .input-desktop{
