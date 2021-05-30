@@ -53,12 +53,14 @@
     background-color: rgba(0, 0, 0, 0);
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 /*PROBLEMA - TEXTO PASSA DA JANELA PRETA*/
 .campo-editor .code-area{
      width: 95%;
      height: 90%;
      outline: none;
+     overflow-y: scroll;
  }
 
 .highlight{

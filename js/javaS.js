@@ -1,24 +1,25 @@
 var coresSeletor = document.querySelector("#cor-seletor");
 var coresBackground = document.querySelector(".cor-selecionada");
-var controle = 0;
+var body = document.querySelector(".body")
 var botaoLista = document.querySelector("#botao-lista");
 var navegacao = document.querySelector(".nav");
-var body = document.querySelector("body");
 var corSeletorSalva;
 var highlightButton = document.querySelector("#highlight-button");
 
-document.addEventListener('DOMContentLoaded', aplicaHighlight);
+//Código para ativar o highlight quando a pagina carrega, usado para testes.
+//document.addEventListener('DOMContentLoaded', aplicaHighlight);
 
 //Menu Mobile
 botaoLista.addEventListener("click", navegacaoMenu);
 
 function navegacaoMenu(){
+    var controle = 0;
     if(controle == 0){
 
-        navegacao.classList.toggle("nav-some");
+        navegacao.classList.toggle("mostrar-nav");
         controle = 1;
     }else{
-        navegacao.classList.toggle("nav-some");
+        navegacao.classList.toggle("mostrar-nav");
         controle = 0;
     }
 }
@@ -32,7 +33,7 @@ function corEditor(event){
     //console.log(cores.value);
 }
 
-//Aplicador de highlight
+//Aplicador de HIGHLIGHT
 var linguagens = ["javascript","html","java","c#", "json","php","xml","csharp"]
 var editorCode = document.querySelector("#code");
 highlightButton.addEventListener('click', aplicaHighlight);
@@ -43,6 +44,7 @@ function aplicaHighlight(){
     editorCode.classList.add(campoDeSelecaoLinguagem.value);
     console.log(campoDeSelecaoLinguagem.value);
     hljs.highlightAll();
+    document.querySelector("#salvo1").innerHTML += conteudoEditor.innerHTML
 }
 
 function removeClassHighlightAnterior(){
@@ -53,7 +55,30 @@ function removeClassHighlightAnterior(){
     }
 }
 
-
+//COMUNIDADE
 //CODIGO PARA PEGAR CONTEUDO DO EDITOR E COPIAR:
-//var conteudoEditor = editorCode;
-//editorCode.innerHTML += conteudoEditor.innerHTML
+var conteudoEditor = editorCode;
+var editorLink = document.querySelector("#editor-link");
+var comunidadeLink = document.querySelector("#comunidade-link");
+var flexContainer = document.querySelector(".container-spa")
+
+comunidadeLink.addEventListener("click", comunidadeSPA);
+var controle = 0;
+function comunidadeSPA(){
+    
+    if(controle == 0){
+
+        flexContainer.classList.add("display-none");
+        controle = 1;
+    }else{
+        flexContainer.classList.remove("display-none");
+        controle = 0;
+    }
+}
+
+//Prevenção do valor padrão da tecla TAB
+document.querySelector('#code').addEventListener('keydown', function(e) {
+    if(e.keyCode === 9) {
+        e.preventDefault();
+    }    
+});

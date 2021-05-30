@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraDev</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="shortcut icon" href="img/favicon.1621287442.ico" type="image/x-icon">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css"> -->
     <link rel="stylesheet" href="highlightjs/dracula.css">
     <link rel="stylesheet" href="css/header.css">
@@ -15,10 +16,12 @@
     <link rel="stylesheet" href="css/flex-container.css">
     <link rel="stylesheet" href="css/campo-editor.css">
     <link rel="stylesheet" href="css/campo-projeto.css">
+    <link rel="stylesheet" href="css/container-spa.css">
     <link type="css/text" href="css/SyntaxHighlighter.css"></link>
 </head>
 
 <body class="body">
+
     <header class="header">
 
         <h1 class="logo-alura-dev"><a href="index.html">Alura<span class="span-dev">Dev</span></a></h1>
@@ -46,11 +49,11 @@
 
              <ul class="nav-li">
                 <h2 class="font-padrao-titulos">Menu</h2>
-                 <li class="itens">
+                 <li id="editor-link" class="itens" >
                      <i class="fas fa-code nav-icon code align-center"></i>
                      <a href="#">Editor de código</a>
                 </li>
-                <li class="itens">
+                <li id="comunidade-link" class="itens" >
                     <i class="fas fa-users nav-icon group align-center"></i>
                     <a href="#">Comunidade</a>
                 </li>
@@ -58,59 +61,51 @@
 
         </nav>
 
-         <!--EDITOR DE TEXT-->
-        <div class="campo-editor">
-            <div class="cor-selecionada">
+        <div class="container-spa">
 
-                <div class="div-black">
-                    <header class="header-div-black">
-                        <span class="bolinha-vermelha span"></span>
-                        <span class="bolinha-amarela span"></span>
-                        <span class="bolinha-verde span"></span>
-                    </header>
-                    
-                    <pre class="editor-pre"><code id="code" class="javascript code-area" contenteditable="true">
-                        *JAVASCRIPT*
-                        var linguagens = ["javascript","html","java","c#", "json","php"]
-                        document.addEventListener('DOMContentLoaded', aplicaHighlight);
-                        highlightButton.addEventListener('click', aplicaHighlight);
-                        
-                        function aplicaHighlight(){
-                        
-                            hljs.highlightAll();
-                            
-                        }
-                        *C#*
-                        using System;
-                        using System.Collections.Generic;
-                        using System.Linq;
-                        using System.Text;
-                        using System.Threading.Tasks;
+                <!--EDITOR DE TEXT-->
+            <div class="campo-editor">
+                <div class="cor-selecionada">
 
-                        namespace CSharpTutorials
-                        {
-                            class Program
+                    <div class="div-black">
+                        <header class="header-div-black">
+                            <span class="bolinha-vermelha span"></span>
+                            <span class="bolinha-amarela span"></span>
+                            <span class="bolinha-verde span"></span>
+                        </header>
+                        
+                        <pre class="editor-pre"><code id="code" class="javascript code-area" contenteditable="true">
+                        
+                            *C#*
+                            using System;
+                            using System.Collections.Generic;
+                            using System.Linq;
+                            using System.Text;
+                            using System.Threading.Tasks;
+
+                            namespace CSharpTutorials
                             {
-                                static void Main(string[] args)
+                                class Program
                                 {
-                                    string message = "Hello World!!";
+                                    static void Main(string[] args)
+                                    {
+                                        string message = "Hello World!!";
 
-                                    Console.WriteLine(message);
+                                        Console.WriteLine(message);
+                                    }
                                 }
                             }
-                        }
-                        *JAVA*
-                        import java.util.Scanner;
+                
 
-                    </code></pre>
+                        </code></pre>
+                    </div>
+
                 </div>
-
+                <button type="button" class="input-look highlight pointer" id="highlight-button">Visualizar com o Highlight</button>
             </div>
-            <button type="button" class="input-look highlight pointer" id="highlight-button">Visualizar com o Highlight</button>
-        </div>
 
-        <!--CAMPO DE CONFIGURAÇÃO DO PROJETO-->
-        <div class="campo-projeto padrao-largura">
+            <!--CAMPO DE CONFIGURAÇÃO DO PROJETO-->
+            <div class="campo-projeto padrao-largura">
 
                 <form action="" class="form-projeto">
                     <!--SEU PROJETO-->
@@ -144,7 +139,31 @@
                     <button type="submit" class="input-look input-desktop button-submit">Salvar Projeto</button>
                 </form>
                 
+            </div>
+
         </div>
+
+    </div>
+    
+     <!--SPA COMUNIDADE-->
+     <div class="comunidade">
+
+        <div class="campo-editor">
+            <div class="cor-selecionada">
+
+                <div class="div-black">
+                    <header class="header-div-black">
+                        <span class="bolinha-vermelha span"></span>
+                        <span class="bolinha-amarela span"></span>
+                        <span class="bolinha-verde span"></span>
+                    </header>
+                    
+                    <pre class="editor-pre"><code id="salvo1" class="javascript code-area" contenteditable="true">
+
+                    </code></pre>
+                </div>
+
+            </div>
 
     </div>
                 <script src="/js/javaS.js"></script>

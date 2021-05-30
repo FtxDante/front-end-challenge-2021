@@ -1,0 +1,22 @@
+.container-spa{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*border: 2px solid white;*/
+    width: 100%;
+}
+.display-none{
+    display: none;
+}
+
+@media screen and (max-width:1366px){
+    .container-spa{
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+@media screen and (max-width:550px){
+    .container-spa{
+        padding: 10px;
+    }
+}

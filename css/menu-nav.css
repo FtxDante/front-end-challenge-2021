@@ -54,12 +54,12 @@
         display: none;
         right: -90%;
     }
-    .nav-some { 
+    .mostrar-nav { 
         display: initial;
         position: fixed;
         z-index: 1;
         right: 0;
-        height: 50%;
+        height: 100%;
         max-width: 195px !important;
         border-radius: 8px;
     }
