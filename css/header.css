@@ -1,8 +1,3 @@
-.body{
-    color: white;
-    font-family: 'Lato', sans-serif;
-    background-color:  #051D3B;
-}
 .header{
     display: flex;
     justify-content: space-between;
@@ -34,27 +29,48 @@
 /*PROBLEMA-  deveria funcionar assim: .header .perfil-preview{} */
 .perfil-preview {
     display: flex; 
-    justify-content: flex-end;
     align-items: center;
+    padding: 10px 10px;
+    border-radius: 8px;
+    transition: 0.5s background-color;
+    cursor: pointer;
 }
+.perfil-preview:hover{
+    background-color: hsla(0, 0%, 100%, 0.082);
+}
+
 .perfil-img{
     width: 25%;
     margin-right: 5px;
 }
 .buscador-header{
     width: 55%;
+    max-width: 1135px;
 }
 .div-alternativos-itens{
     display: none;
 }
 .fa-search{
     font-size: 1.5em;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.5s background-color;
 }
 
 .fa-bars{
     font-size: 1.5em;
     margin-left: 25px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.5s background-color;
 }
+.fa-search:hover, .fa-bars:hover{
+    background-color: hsla(0, 0%, 100%, 0.052);
+}
+.fa-search:active, .fa-bars:active{
+    background-color: hsla(0, 0%, 100%, 0.08 2);
+}
+
 
 .display-flex{
     display: flex;

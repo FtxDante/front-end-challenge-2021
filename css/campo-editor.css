@@ -70,5 +70,7 @@
     width: 100%;
     height: 56px;
     padding: 15px;
+    font-size: 1em;
+    font-family: 'Inter', sans-serif !important;
     
 }

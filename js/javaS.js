@@ -5,7 +5,7 @@ var botaoLista = document.querySelector("#botao-lista");
 var navegacao = document.querySelector(".nav");
 var corSeletorSalva;
 var highlightButton = document.querySelector("#highlight-button");
-
+var controle = 0;
 //Código para ativar o highlight quando a pagina carrega, usado para testes.
 //document.addEventListener('DOMContentLoaded', aplicaHighlight);
 
@@ -13,14 +13,24 @@ var highlightButton = document.querySelector("#highlight-button");
 botaoLista.addEventListener("click", navegacaoMenu);
 
 function navegacaoMenu(){
-    var controle = 0;
+    
+    
     if(controle == 0){
-
-        navegacao.classList.toggle("mostrar-nav");
-        controle = 1;
+        
+        navegacao.classList.remove("fade-out");
+        navegacao.classList.add("mostrar-nav");
+        console.log("ADICIONA NAV")
+        controle = 1; 
+        
+        
     }else{
-        navegacao.classList.toggle("mostrar-nav");
-        controle = 0;
+        navegacao.classList.add("fade-out");
+        setTimeout(function(){
+            navegacao.classList.remove("mostrar-nav");
+            console.log("REMOVE NAV")
+            controle = 0;
+            },500)
+        
     }
 }
 
@@ -55,7 +65,6 @@ function removeClassHighlightAnterior(){
     }
 }
 
-//COMUNIDADE
 //Prevenção do valor padrão da tecla TAB
 document.querySelector('#code').addEventListener('keydown', function(e) {
     if(e.keyCode === 9) {
@@ -63,24 +72,26 @@ document.querySelector('#code').addEventListener('keydown', function(e) {
     }    
 });
 
+//COMUNIDADE
 //CODIGO PARA PEGAR CONTEUDO DO EDITOR E COPIAR:
 var conteudoEditor = editorCode;
 var editorLink = document.querySelector("#editor-link");
 var comunidadeLink = document.querySelector("#comunidade-link");
-var flexContainer = document.querySelector(".container-spa");
+var containerPaginaPrincipal = document.querySelector(".container-pagina-principal");
 var controle = 0;
-var comunidadeDiv = document.querySelector(".comunidade");
+var comunidade = document.querySelector(".comunidade");
 comunidadeLink.addEventListener("click", irParaComunidade);
 editorLink.addEventListener("click", irParaEditor);
 
+//IR DO EDITOR PARA A COMUNIDADE E VICE-VERSA
 function irParaComunidade(){
-        flexContainer.classList.add("display-none");
-        comunidadeDiv.classList.add("comunidade-aparece-desaparece");
+    containerPaginaPrincipal.classList.add("ativaDisplay-none");
+        comunidade.classList.add("comunidade-aparece");
         controle = 1;   
 }
 
 function irParaEditor(){
-    flexContainer.classList.remove("display-none");
-    comunidadeDiv.classList.remove("comunidade-aparece-desaparece");
+    containerPaginaPrincipal.classList.remove("ativaDisplay-none");
+    comunidade.classList.remove("comunidade-aparece");
 }
 

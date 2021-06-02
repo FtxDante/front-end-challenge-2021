@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="css/campo-projeto.css">
     <link rel="stylesheet" href="css/container-spa.css">
     <link type="css/text" href="css/SyntaxHighlighter.css"></link>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body class="body">
@@ -44,107 +46,111 @@
 
     <div class="flex-container">
 
-
         <!--NAVEGAÇÃO-->
         <nav class="nav padrao-largura">
 
-             <ul class="nav-li">
-                <h2 class="font-padrao-titulos">Menu</h2>
-                 <li id="editor-link" class="itens" >
-                     <i class="fas fa-code nav-icon code align-center"></i>
-                     <a href="#">Editor de código</a>
-                </li>
-                <li id="comunidade-link" class="itens" >
-                    <i class="fas fa-users nav-icon group align-center"></i>
-                    <a href="#">Comunidade</a>
-                </li>
-             </ul>
+            <ul class="nav-li">
+            <h2 class="font-padrao-titulos">Menu</h2>
+                <li id="editor-link" class="itens" >
+                    <i class="fas fa-code nav-icon code align-center"></i>
+                    <a href="#">Editor de código</a>
+            </li>
+            <li id="comunidade-link" class="itens" >
+                <i class="fas fa-users nav-icon group align-center"></i>
+                <a href="#">Comunidade</a>
+            </li>
+            </ul>
+            <hr class="linha-divisao">
+            <div class="perfil-preview">
+            <img src="img/Header/perfil-harry.png" alt="Sua Imagem de Perfil" class="perfil-img">
+            <p>Harry</p>
+        </div>
 
         </nav>
 
-        <div class="container-spa">
+        <div class="container-pagina-principal">
 
-                <!--EDITOR DE TEXT-->
-            <div class="campo-editor">
-                <div class="cor-selecionada">
+               <!--EDITOR DE TEXT-->
+           <div class="campo-editor">
+               <div class="cor-selecionada">
 
-                    <div class="div-black">
-                        <header class="header-div-black">
-                            <span class="bolinha-vermelha span"></span>
-                            <span class="bolinha-amarela span"></span>
-                            <span class="bolinha-verde span"></span>
-                        </header>
-                        
-                        <pre class="editor-pre"><code id="code" class="javascript code-area" contenteditable="true">
-                        
-                            *C#*
-                            using System;
-                            using System.Collections.Generic;
-                            using System.Linq;
-                            using System.Text;
-                            using System.Threading.Tasks;
+                   <div class="div-black">
+                       <header class="header-div-black">
+                           <span class="bolinha-vermelha span"></span>
+                           <span class="bolinha-amarela span"></span>
+                           <span class="bolinha-verde span"></span>
+                       </header>
+                       
+                       <pre class="editor-pre"><code id="code" class="javascript code-area" contenteditable="true">
+                       
+                           *C#*
+                           using System;
+                           using System.Collections.Generic;
+                           using System.Linq;
+                           using System.Text;
+                           using System.Threading.Tasks;
 
-                            namespace CSharpTutorials
-                            {
-                                class Program
-                                {
-                                    static void Main(string[] args)
-                                    {
-                                        string message = "Hello World!!";
+                           namespace CSharpTutorials
+                           {
+                               class Program
+                               {
+                                   static void Main(string[] args)
+                                   {
+                                       string message = "Hello World!!";
 
-                                        Console.WriteLine(message);
-                                    }
-                                }
-                            }
-                
+                                       Console.WriteLine(message);
+                                   }
+                               }
+                           }
+               
 
-                        </code></pre>
-                    </div>
+                       </code></pre>
+                   </div>
 
-                </div>
-                <button type="button" class="input-look highlight pointer" id="highlight-button">Visualizar com o Highlight</button>
-            </div>
+               </div>
+               <button type="button" class="input-look highlight pointer" id="highlight-button">Visualizar com o Highlight</button>
+           </div>
 
-            <!--CAMPO DE CONFIGURAÇÃO DO PROJETO-->
-            <div class="campo-projeto padrao-largura">
+           <!--CAMPO DE CONFIGURAÇÃO DO PROJETO-->
+           <div class="campo-projeto padrao-largura">
 
-                <form action="" class="form-projeto">
-                    <!--SEU PROJETO-->
-                    <label for="seu-projeto" class="font-padrao-titulos">Seu projeto</label>
-                    <div class="div-projeto" id="seu-projeto">
+               <form action="" class="form-projeto">
+                   <!--SEU PROJETO-->
+                   <label for="seu-projeto" class="font-padrao-titulos">Seu projeto</label>
+                   <div class="div-projeto" id="seu-projeto">
 
-                        <input type="text" class="input-desktop input-look" placeholder="Nome do seu projeto" required>
-        
-                        <textarea name="" id="" cols="30" rows="10"  class="input-descricao-projeto input-look input-desktop" placeholder="Descrição do seu projeto" required ></textarea>
+                       <input type="text" class="input-desktop input-look" placeholder="Nome do seu projeto" required>
+       
+                       <textarea name="" id="" cols="30" rows="10"  class="input-descricao-projeto input-look input-desktop" placeholder="Descrição do seu projeto" required ></textarea>
 
-                    </div>
-                    <!--PERSONALIZAÇÃO-->
-                    <label for="personalizacao" class="font-padrao-titulos">Personalização</label>
-                    <div class="div-projeto" id="personalizacao">
-            
-                        <select name="opções de selecao" id="campo-selecao" class="input-look input-desktop">
-                           
-                            <option value="javascript" >JavaScript</option> 
-                            <option value="html">Html</option>
-                            <option value="java">Java</option>
-                            <option value="c#">C#</option>
-                            <option value="json">Json</option>
-                            <option value="php">PHP</option>
-                        
-                        </select>
-                        
-                        <input type="color" value="#6BD1FF" class="cor-de-fundo  input-desktop" id="cor-seletor">
+                   </div>
+                   <!--PERSONALIZAÇÃO-->
+                   <label for="personalizacao" class="font-padrao-titulos">Personalização</label>
+                   <div class="div-projeto" id="personalizacao">
+           
+                       <select name="opcoes-de-selecao" id="campo-selecao" class="input-look input-desktop ">
+                          
+                           <option value="javascript" >JavaScript</option> 
+                           <option value="html">Html</option>
+                           <option value="java">Java</option>
+                           <option value="c#">C#</option>
+                           <option value="json">Json</option>
+                           <option value="php">PHP</option>
+                       
+                       </select>
+                       
+                       <input type="color" value="#6BD1FF" class="cor-de-fundo  input-desktop pointer" id="cor-seletor">
 
-                    </div>
-                    
-                    <button type="submit" class="input-look input-desktop button-submit">Salvar Projeto</button>
-                </form>
-                
-            </div>
+                   </div>
+                   
+                   <button type="submit" class="input-look input-desktop button-submit">Salvar Projeto</button>
+               </form>
+               
+           </div>
 
-        </div>
+        </div>   
 <!--FIM FLEX CONTAINER-->
-<!--SPA COMUNIDADE-->
+   <!--SPA COMUNIDADE-->
     <div class="comunidade">
 
             <div class="campo-editor">
@@ -156,7 +162,7 @@
                                 <span class="bolinha-verde span"></span>
                             </header>
                             
-                            <pre class="editor-pre"><code id="salvo1" class="javascript code-area" contenteditable="true"></code></pre>
+                            <pre class="editor-pre"><code id="salvo1" class="javascript code-area" ></code></pre>
                     </div>
                 </div>
                 <div class="informacoes-comunidade">
@@ -177,7 +183,7 @@
                             <span class="bolinha-verde span"></span>
                         </header>
                         
-                        <pre class="editor-pre"><code id="salvo1" class="javascript code-area" contenteditable="true"></code></pre>
+                        <pre class="editor-pre"><code id="salvo1" class="javascript code-area"></code></pre>
                 </div>
             </div>
             <div class="informacoes-comunidade">
@@ -189,52 +195,10 @@
                 </ul>
             </div>
         </div>
-        <div class="campo-editor">
-            <div class="cor-selecionada">
-                <div class="div-black">
-                    <header class="header-div-black">
-                        <span class="bolinha-vermelha span"></span>
-                        <span class="bolinha-amarela span"></span>
-                        <span class="bolinha-verde span"></span>
-                    </header>
-                    
-                    <pre class="editor-pre"><code id="salvo1" class="javascript code-area" contenteditable="true"></code></pre>
-            </div>
-        </div>
-        <div class="informacoes-comunidade">
-            <h1 class="titulo-projeto">Título do projeto</h1>
-            <h2 class="subtitulo-projeto">Essa é a descrição do projeto</h2>
-            <ul class="reacoes-e-comentarios">
-                <li class="itens"><i class="fas fa-comment"></i> 9</li>
-                <li class="itens"><i class="fas fa-heart"></i> 9</li>
-            </ul>
-        </div>
-    </div>
-        <div class="campo-editor">
-            <div class="cor-selecionada">
-                <div class="div-black">
-                    <header class="header-div-black">
-                        <span class="bolinha-vermelha span"></span>
-                        <span class="bolinha-amarela span"></span>
-                        <span class="bolinha-verde span"></span>
-                    </header>
-                    
-                    <pre class="editor-pre"><code id="salvo1" class="javascript code-area" contenteditable="true"></code></pre>
-            </div>
-        </div>
-        <div class="informacoes-comunidade">
-            <h1 class="titulo-projeto">Título do projeto</h1>
-            <h2 class="subtitulo-projeto">Essa é a descrição do projeto</h2>
-            <ul class="reacoes-e-comentarios">
-                <li class="itens"><i class="fas fa-comment"></i> 9</li>
-                <li class="itens"><i class="fas fa-heart"></i> 9</li>
-            </ul>
-        </div>
-    </div>
+             
     <!--FIM COMUNIDADE-->
     </div>
     </div>
-
     
     
     

@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 .nav{
-    display: flex;
+    display: flex ;
     flex-direction: column;
     align-self: flex-start;
     background-color: #051D3B;
     min-width: 250px;
-    transition: right 0.5s ease-out;
     user-select: none;
 }
 
@@ -15,13 +14,22 @@
     opacity: 0.6;
     list-style: none;
     margin-bottom: 15px;
-    transition: 1s opacity;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: 0.5s opacity ;
+    transition: 0.5s background-color;
+    user-select: none;
+}
+
+.nav .itens:hover{
+    background-color: hsla(0, 0%, 100%, 0.082);
 }
 .nav .itens a{
     margin-left: 5px;
     text-decoration:none;
     font-size: 0.9em;
     color:rgba(255, 255, 255, 0.753);
+    user-select: none;
 }
 .nav .itens .nav-icon{
     font-size: 1em;
@@ -49,6 +57,20 @@
     border-radius: 18px;
     margin-right: 15px;
 }
+
+.nav .perfil-preview {
+    display:none;
+}
+
+.fade-out{
+    opacity: 0;
+    transition: 1s opacity;
+}
+.fade-in{
+    opacity: 1;
+    transition: 1s opacity;
+}
+
 /*PROBLEMA - TRANSIÇÃO NÃO FUNCIONA*/
 @media screen and (max-width:1366px){
     .nav{
@@ -57,12 +79,25 @@
         right: -90%;
     }
     .mostrar-nav { 
-        display: initial;
+        display: initial !important;
         position: fixed;
         z-index: 1;
         right: 0;
         height: 100%;
         max-width: 195px !important;
         border-radius: 8px;
+    }
+
+        /* NAV PERFIL */
+    .nav .perfil-preview {
+        display: flex; 
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 10px;
+        border-radius: 8px;
+    }
+    .nav .perfil-img{
+        width: 25%;
+        margin-right: 5px;
     }
 }

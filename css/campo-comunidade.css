@@ -1,7 +1,7 @@
 .comunidade {
     display: none;
 }
-.comunidade-aparece-desaparece{
+.comunidade-aparece{
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;

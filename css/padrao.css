@@ -19,6 +19,8 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+
 .font-padrao-titulos{
     font-size: 0.85em;
     text-transform: uppercase;
@@ -33,15 +35,6 @@
     align-items: center;
 }
 
-.input-look{
-    background-color:rgba(255, 255, 255, 0.16);
-    height: 56px;
-    border: none;
-    border-radius: 8px;
-    padding: 0 10px 0 10px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
 .padrao-largura{
     width: 20%;
     box-sizing: border-box;
@@ -50,11 +43,26 @@
 .input-desktop{
     box-sizing: border-box;
     margin-bottom: 10px;
-    margin-left: 10px;
+    margin-right: 20px;
     width: 100%;
     max-width: 292px;
 }
 
+.input-look{
+    background-color:rgba(255, 255, 255, 0.16);
+    height: 56px;
+    border: none;
+    border-radius: 8px;
+    padding: 0 10px 0 10px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+}
+
+.input-look:hover{
+    transition: 0.5s background-color;
+    background-color: rgba(255, 255, 255, 0.26);
+}
 .pointer{
     cursor: pointer;
 }
@@ -67,7 +75,29 @@ option{
     color: black;
 }
 
+.linha-divisao{
+    border: none;
+    border-top: 1px solid hsla(0, 0%, 100%, 0.082);
+}
 
+.ativaDisplay-none{
+    display: none !important;
+}
+
+.comunidade-aparece{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+}
+.body{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1em;
+    color: white;
+    background-color:  #051D3B;
+    
+}
 @media screen and (max-width:1366px){
     .input-desktop{
         max-width: none;
