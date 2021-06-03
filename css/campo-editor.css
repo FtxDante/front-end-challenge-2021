@@ -72,5 +72,9 @@
     padding: 15px;
     font-size: 1em;
     font-family: 'Inter', sans-serif !important;
+    transition: 1s background-color;
     
+}
+.highlight:hover{
+    background-color: #5081FB;
 }

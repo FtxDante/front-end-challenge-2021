@@ -26,6 +26,11 @@
 .button-submit{
     background-color: #5081FB;
 }
+.button-submit:hover{
+    cursor: pointer;
+    background-color: #7BA4FC;
+    opacity: 1 !important;
+}
 @media screen and (max-width:1366px) {
     .flex-container{
         flex-direction: column;
@@ -48,10 +53,5 @@
         margin-left: 10px;
         min-height: 55px;
     }
-    .button-submit{
-        min-width: 100%;
-    }
-    .button-submit:hover{
-        cursor: pointer;
-    }
+    
 }

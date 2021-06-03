@@ -10,27 +10,24 @@ var controle = 0;
 //document.addEventListener('DOMContentLoaded', aplicaHighlight);
 
 //Menu Mobile
-botaoLista.addEventListener("click", navegacaoMenu);
 
-function navegacaoMenu(){
-    
-    
+botaoLista.addEventListener("click", chamaNavegacaoMenu);
+
+function chamaNavegacaoMenu(){
     if(controle == 0){
-        
         navegacao.classList.remove("fade-out");
         navegacao.classList.add("mostrar-nav");
-        console.log("ADICIONA NAV")
-        controle = 1; 
-        
-        
+        botaoLista.classList.remove("fa-bars");
+        botaoLista.classList.add("fa-times");
+        controle = 1;    
     }else{
         navegacao.classList.add("fade-out");
+        botaoLista.classList.remove("fa-times");
+        botaoLista.classList.add("fa-bars");
         setTimeout(function(){
             navegacao.classList.remove("mostrar-nav");
-            console.log("REMOVE NAV")
             controle = 0;
-            },500)
-        
+            },500) 
     }
 }
 
@@ -39,7 +36,6 @@ coresSeletor.addEventListener("input", corEditor);
 function corEditor(event){
     coresBackground.style.backgroundColor = coresSeletor.value;
     corSeletorSalva = coresSeletor.value;
-
     //console.log(cores.value);
 }
 
@@ -80,18 +76,30 @@ var comunidadeLink = document.querySelector("#comunidade-link");
 var containerPaginaPrincipal = document.querySelector(".container-pagina-principal");
 var controle = 0;
 var comunidade = document.querySelector(".comunidade");
+
 comunidadeLink.addEventListener("click", irParaComunidade);
 editorLink.addEventListener("click", irParaEditor);
 
 //IR DO EDITOR PARA A COMUNIDADE E VICE-VERSA
 function irParaComunidade(){
-    containerPaginaPrincipal.classList.add("ativaDisplay-none");
+    containerPaginaPrincipal.classList.add("fade-out");
+    setTimeout(() => {
+        containerPaginaPrincipal.classList.remove("fade-out");
+        containerPaginaPrincipal.classList.add("ativaDisplay-none");
         comunidade.classList.add("comunidade-aparece");
         controle = 1;   
+    }, 1000);
+    navegacao.classList.remove("mostrar-nav");
 }
 
 function irParaEditor(){
-    containerPaginaPrincipal.classList.remove("ativaDisplay-none");
-    comunidade.classList.remove("comunidade-aparece");
+    comunidade.classList.add("fade-out");
+    setTimeout(() => {
+        comunidade.classList.remove("fade-out");
+        containerPaginaPrincipal.classList.remove("ativaDisplay-none");
+        comunidade.classList.remove("comunidade-aparece"); 
+    }, 1000);
+    navegacao.classList.remove("mostrar-nav");
 }
+
 
