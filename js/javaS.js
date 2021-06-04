@@ -83,6 +83,8 @@ editorLink.addEventListener("click", irParaEditor);
 //IR DO EDITOR PARA A COMUNIDADE E VICE-VERSA
 function irParaComunidade(){
     containerPaginaPrincipal.classList.add("fade-out");
+    botaoLista.classList.remove("fa-times");
+        botaoLista.classList.add("fa-bars");
     setTimeout(() => {
         containerPaginaPrincipal.classList.remove("fade-out");
         containerPaginaPrincipal.classList.add("ativaDisplay-none");
@@ -94,6 +96,8 @@ function irParaComunidade(){
 
 function irParaEditor(){
     comunidade.classList.add("fade-out");
+    botaoLista.classList.remove("fa-times");
+    botaoLista.classList.add("fa-bars");
     setTimeout(() => {
         comunidade.classList.remove("fade-out");
         containerPaginaPrincipal.classList.remove("ativaDisplay-none");
