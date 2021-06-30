@@ -31,179 +31,179 @@
 
         <input type="text" placeholder="Busque por algo" class="input-look buscador-header">
 
-        <div class="div-alternativos-itens">
+        <section class="section-alternativos-itens">
             <i class="fas fa-search pointer lupa-pesquisa"></i>
             <i class="fas fa-bars pointer barras-sanduiche" id="botao-lista"></i>
-        </div>
+        </section>
         
 
-        <div class="perfil-preview">
+        <section class="perfil-preview">
             <img src="img/Header/perfil-harry.png" alt="Sua Imagem de Perfil" class="perfil-img">
             <p>Harry</p>
-        </div>
+        </section>
         
     </header>
 
-    <div class="flex-container">
+    <main>
+        <section class="flex-container">
 
-        <!--NAVEGAÇÃO-->
-        <nav class="nav padrao-largura">
-
-            <ul class="nav-li">
-            <h2 class="font-padrao-titulos">Menu</h2>
-                <li id="editor-link" class="itens" >
-                    <i class="fas fa-code nav-icon code align-center"></i>
-                    <a href="#">Editor de código</a>
-            </li>
-            <li id="comunidade-link" class="itens" >
-                <i class="fas fa-users nav-icon group align-center"></i>
-                <a href="#">Comunidade</a>
-            </li>
-            </ul>
-            <hr class="linha-divisao">
-            <div class="perfil-preview">
-            <img src="img/Header/perfil-harry.png" alt="Sua Imagem de Perfil" class="perfil-img">
-            <p>Harry</p>
-        </div>
-
-        </nav>
-
-        <div class="container-pagina-principal">
-
-               <!--EDITOR DE TEXT-->
-           <div class="campo-editor">
-               <div class="cor-selecionada">
-
-                   <div class="div-black">
-                       <header class="header-div-black">
-                           <span class="bolinha-vermelha span"></span>
-                           <span class="bolinha-amarela span"></span>
-                           <span class="bolinha-verde span"></span>
-                       </header>
-                       
-                       <pre class="editor-pre"><code id="code" class="javascript code-area" contenteditable="true">
-                       
-                           *C#*
-                           using System;
-                           using System.Collections.Generic;
-                           using System.Linq;
-                           using System.Text;
-                           using System.Threading.Tasks;
-
-                           namespace CSharpTutorials
-                           {
-                               class Program
+            <!--NAVEGAÇÃO-->
+            <nav class="nav padrao-largura">
+    
+                <ul class="nav-li">
+                <h2 class="font-padrao-titulos">Menu</h2>
+                    <li id="editor-link" class="itens" >
+                        <i class="fas fa-code nav-icon code align-center"></i>
+                        <a href="#">Editor de código</a>
+                </li>
+                <li id="comunidade-link" class="itens" >
+                    <i class="fas fa-users nav-icon group align-center"></i>
+                    <a href="#">Comunidade</a>
+                </li>
+                </ul>
+                <hr class="linha-sectionisao">
+                <section class="perfil-preview">
+                <img src="img/Header/perfil-harry.png" alt="Sua Imagem de Perfil" class="perfil-img">
+                <p>Harry</p>
+            </section>
+    
+            </nav>
+    
+            <section class="container-pagina-principal">
+    
+                   <!--EDITOR DE TEXTO-->
+               <section class="campo-editor">
+                   <section class="cor-selecionada">
+    
+                       <section class="section-black">
+                           <header class="header-section-black">
+                               <span class="bolinha-vermelha span"></span>
+                               <span class="bolinha-amarela span"></span>
+                               <span class="bolinha-verde span"></span>
+                           </header>
+                           
+                           <pre class="editor-pre"><code id="code" class="javascript code-area" contenteditable="true">
+                           
+                               *C#*
+                               using System;
+                               using System.Collections.Generic;
+                               using System.Linq;
+                               using System.Text;
+                               using System.Threading.Tasks;
+    
+                               namespace CSharpTutorials
                                {
-                                   static void Main(string[] args)
+                                   class Program
                                    {
-                                       string message = "Hello World!!";
-
-                                       Console.WriteLine(message);
+                                       static void Main(string[] args)
+                                       {
+                                           string message = "Hello World!!";
+    
+                                           Console.WriteLine(message);
+                                       }
                                    }
                                }
-                           }
-               
-
-                       </code></pre>
-                   </div>
-
-               </div>
-               <button type="button" class="input-look highlight pointer" id="highlight-button">Visualizar com o Highlight</button>
-           </div>
-
-           <!--CAMPO DE CONFIGURAÇÃO DO PROJETO-->
-           <div class="campo-projeto padrao-largura">
-
-               <form action="" class="form-projeto">
-                   <!--SEU PROJETO-->
-                   <label for="seu-projeto" class="font-padrao-titulos">Seu projeto</label>
-                   <div class="div-projeto" id="seu-projeto">
-
-                       <input type="text" class="input-desktop input-look" placeholder="Nome do seu projeto" required>
-       
-                       <textarea name="" id="" cols="30" rows="10"  class="input-descricao-projeto input-look input-desktop" placeholder="Descrição do seu projeto" required ></textarea>
-
-                   </div>
-                   <!--PERSONALIZAÇÃO-->
-                   <label for="personalizacao" class="font-padrao-titulos">Personalização</label>
-                   <div class="div-projeto" id="personalizacao">
-           
-                       <select name="opcoes-de-selecao" id="campo-selecao" class="input-look input-desktop ">
-                          
-                           <option value="javascript" >JavaScript</option> 
-                           <option value="html">Html</option>
-                           <option value="java">Java</option>
-                           <option value="c#">C#</option>
-                           <option value="json">Json</option>
-                           <option value="php">PHP</option>
-                       
-                       </select>
-                       
-                       <input type="color" value="#6BD1FF" class="cor-de-fundo  input-desktop pointer" id="cor-seletor">
-
-                   </div>
                    
-                   <button type="submit" class="input-look input-desktop button-submit">Salvar Projeto</button>
-               </form>
+    
+                           </code></pre>
+                       </section>
+    
+                   </section>
+                   <button type="button" class="input-look highlight pointer" id="highlight-button">Visualizar com o Highlight</button>
+               </section>
+
+               <!--CAMPO DE CONFIGURAÇÃO DO PROJETO-->
+               <section class="campo-projeto padrao-largura">
+    
+                   <form action="" class="form-projeto">
+                       <!--SEU PROJETO-->
+                       <label for="seu-projeto" class="font-padrao-titulos">Seu projeto</label>
+                       <section class="section-projeto" id="seu-projeto">
+    
+                           <input type="text" class="input-desktop input-look" placeholder="Nome do seu projeto" required>
+           
+                           <textarea name="" id="" cols="30" rows="10"  class="input-descricao-projeto input-look input-desktop" placeholder="Descrição do seu projeto" required ></textarea>
+    
+                       </section>
+                       <!--PERSONALIZAÇÃO-->
+                       <label for="personalizacao" class="font-padrao-titulos">Personalização</label>
+                       <section class="section-projeto" id="personalizacao">
                
-           </div>
+                           <select name="opcoes-de-selecao" id="campo-selecao" class="input-look input-desktop ">
+                              
+                               <option value="javascript" >JavaScript</option> 
+                               <option value="html">Html</option>
+                               <option value="java">Java</option>
+                               <option value="c#">C#</option>
+                               <option value="json">Json</option>
+                               <option value="php">PHP</option>
+                           
+                           </select>
+                           
+                           <input type="color" value="#6BD1FF" class="cor-de-fundo  input-desktop pointer" id="cor-seletor">
+    
+                       </section>
+                       
+                       <button type="submit" class="input-look input-desktop button-submit">Salvar Projeto</button>
+                   </form>
+                   
+               </section>
+    
+            </section>   
+    <!--FIM FLEX CONTAINER-->
 
-        </div>   
-<!--FIM FLEX CONTAINER-->
-   <!--SPA COMUNIDADE-->
-    <div class="comunidade">
-
-            <div class="campo-editor">
-                    <div class="cor-selecionada">
-                        <div class="div-black">
-                            <header class="header-div-black">
+       <!--SPA COMUNIDADE-->
+        <section class="comunidade">
+    
+                <section class="campo-editor">
+                        <section class="cor-selecionada">
+                            <section class="section-black">
+                                <header class="header-section-black">
+                                    <span class="bolinha-vermelha span"></span>
+                                    <span class="bolinha-amarela span"></span>
+                                    <span class="bolinha-verde span"></span>
+                                </header>
+                                
+                                <pre class="editor-pre"><code id="salvo1" class="javascript code-area" ></code></pre>
+                        </section>
+                    </section>
+                    <section class="informacoes-comunidade">
+                        <h1 class="titulo-projeto">Título do projeto</h1>
+                        <h2 class="subtitulo-projeto">Essa é a descrição do projeto</h2>
+                        <ul class="reacoes-e-comentarios">
+                            <li class="itens"><i class="fas fa-comment"></i> 9</li>
+                            <li class="itens"><i class="fas fa-heart"></i> 9</li>
+                        </ul>
+                    </section>
+                </section>
+    
+    
+                <section class="campo-editor">
+                    <section class="cor-selecionada">
+                        <section class="section-black">
+                            <header class="header-section-black">
                                 <span class="bolinha-vermelha span"></span>
                                 <span class="bolinha-amarela span"></span>
                                 <span class="bolinha-verde span"></span>
                             </header>
                             
-                            <pre class="editor-pre"><code id="salvo1" class="javascript code-area" ></code></pre>
-                    </div>
-                </div>
-                <div class="informacoes-comunidade">
-                    <h1 class="titulo-projeto">Título do projeto</h1>
-                    <h2 class="subtitulo-projeto">Essa é a descrição do projeto</h2>
-                    <ul class="reacoes-e-comentarios">
-                        <li class="itens"><i class="fas fa-comment"></i> 9</li>
-                        <li class="itens"><i class="fas fa-heart"></i> 9</li>
-                    </ul>
-                </div>
-            </div>
-
-
-            <div class="campo-editor">
-                <div class="cor-selecionada">
-                    <div class="div-black">
-                        <header class="header-div-black">
-                            <span class="bolinha-vermelha span"></span>
-                            <span class="bolinha-amarela span"></span>
-                            <span class="bolinha-verde span"></span>
-                        </header>
-                        
-                        <pre class="editor-pre"><code id="salvo1" class="javascript code-area"></code></pre>
-                </div>
-            </div>
-            <div class="informacoes-comunidade">
-                    <h1 class="titulo-projeto">Título do projeto</h1>
-                    <h2 class="subtitulo-projeto">Essa é a descrição do projeto</h2>
-                    <ul class="reacoes-e-comentarios">
-                        <li class="itens"><i class="fas fa-comment"></i> 9</li>
-                        <li class="itens"><i class="fas fa-heart"></i> 9</li>
-                    </ul>
-                </div>
-            </div>
-             
-    <!--FIM COMUNIDADE-->
-    </div>
-    </div>
-    
-    
-    
+                            <pre class="editor-pre"><code id="salvo1" class="javascript code-area"></code></pre>
+                    </section>
+                </section>
+                <section class="informacoes-comunidade">
+                        <h1 class="titulo-projeto">Título do projeto</h1>
+                        <h2 class="subtitulo-projeto">Essa é a descrição do projeto</h2>
+                        <ul class="reacoes-e-comentarios">
+                            <li class="itens"><i class="fas fa-comment"></i> 9</li>
+                            <li class="itens"><i class="fas fa-heart"></i> 9</li>
+                        </ul>
+                    </section>
+                </section>
+                 
+        <!--FIM COMUNIDADE-->
+        </section>
+        </section>
+    </main>
                 <script src="/js/javaS.js"></script>
                 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
 </body>
